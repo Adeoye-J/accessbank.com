@@ -349,11 +349,11 @@ ul.sub-list li:hover > .sub-list2 {
 
 .image {
     flex: 0 0 100%;
+    scroll-snap-align: start;
     height: 90vh;
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 50, 0.5);
     background-size: cover;
-    scroll-snap-align: start;
     background-blend-mode: overlay;
     display: flex;
     justify-content: center; 
@@ -362,10 +362,8 @@ ul.sub-list li:hover > .sub-list2 {
 
 #prev, #next {
     position: absolute;
-    /* the next two lines of code are used to center an element vertically */
     top: 50%;
     transform: translateY(-50%);
-    /* ...I was referring to the two codes above */
     font-size: 24px;
     background-color: #fff;
     color: rgba(0, 0, 0, 0.4);
@@ -427,5 +425,289 @@ ul.sub-list li:hover > .sub-list2 {
     font-size: 1.5rem;
     font-weight: bold;
 }
+
+
+
+
+/*********** Section-3 ***********/
+
+
+
+.section-3 {
+    background-image: url(images/wood-texture-blue.jpg);
+    height: 22rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.section-con-3 h2{
+    color: #fff;
+    font-family: "oswald";
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.section-con-3 p {
+    font-family: handelson;
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.section-con-3 a {
+    display: inline-block;
+    text-decoration: none;
+    padding: .9rem 1.7rem;
+    background-color: #00539a;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all ease-in-out .5s;
+}
+
+.section-con-3 a:hover {
+    background-color: #fff;
+    color: #00539a;
+}
+
+
+
+
+/************ Section-4 ************/
+
+
+.section-4 {
+    background-color: #fff;
+    height: 15rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.section-con-4{
+    display: flex;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+}
+
+.section-con-4 .icons{
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icons img {
+    display: inline-block;
+    width: 4rem;
+}
+
+.icons p {
+    color: #064388;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.icons p:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+#prev-icon, #next-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    padding: .3rem;
+
+}
+
+#prev-icon {
+    left: 1.5rem;
+}
+
+#next-icon {
+    right: 1.5rem;
+}
+
+
+
+
+
+/*********** Section-5 ***********/
+
+
+.section-5 {
+    background-image: url(images/largesub-commercial-loans.jpg);
+    background-color: rgba(0, 35, 112, 0.7);
+    background-blend-mode: overlay;
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.section-con-5 h2{
+    color: #fff;
+    font-family: "oswald";
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.section-con-5 p {
+    font-family: "Roboto";
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.7rem;
+}
+
+.section-con-5 a {
+    display: inline-block;
+    text-decoration: none;
+    padding: .9rem 1.7rem;
+    background-color: #00539a;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all ease-in-out .5s;
+}
+
+.section-con-5 a:hover {
+    background-color: #fff;
+    color: #00539a;
+}
+
+
+
+/* Section-6 */
+
+
+
+.section-6 {
+    background-image: url(images/testimonial-bg.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.section-con-6 {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.section-con-6 h2{
+    color: #00539a;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: oswald;
+    letter-spacing: 1px;
+}
+
+.section-con-6 p {
+    font-family: "Roboto";
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    line-height: 2rem;
+}
+
+.sub-section-con-6 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials {
+    padding: 1rem 0;
+    width: 85%;
+    display: flex;
+    overflow: hidden;
+    word-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+}
+
+.testimonial {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    background-color: #fff;
+    text-align: center;
+    border: 2px solid #00f;
+    box-shadow: 0 0 6px 5px rgba(0, 0, 255, 0.7);
+    margin: 1rem;
+    border-radius: 10px;
+    padding-bottom: 1rem;
+}
+
+.testimonial img {
+    border-radius: 50%;
+    margin: 2rem 0 0.5rem;
+    width: 50%;
+}
+
+.testimonial p {
+    margin-top: 1rem;
+    padding: 0 3rem;
+    font-size: 1.45rem;
+    line-height: 2rem;
+    font-family: "Roboto";
+    font-style: italic;
+}
+
+.testimonial p span {
+    font-style: normal;
+    display: inline-block;
+}
+
+#prev-testimonial, #next-testimonial {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    padding: .3rem;
+
+}
+
+#prev-testimonial {
+    left: 0;
+}
+
+#next-testimonial {
+    right: 0;
+}
+
+
 
 
