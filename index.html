@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Access Bank</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 <body>
     <header>
-        <div class="main-header">
+        <div class="main-header container">
             <img src="images/accessbank-logo.svg" alt="assess_bank_logo" width="200px">
             
             <div class="mobile-menu">
@@ -23,9 +22,14 @@
                 <button>Login</button>
             </div>
 
-            <nav class="main-nav">
+            <nav class="main-nav" id="main-nav">
                 <ul>
-                    <li class="main-list"><a href="" >For You</a>
+                    <li class="main-list" id="main-list">
+                        <div class="arrows">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            <i class="fa-solid fa-arrow-down"></i> 
+                        </div> 
+                        For You
                         <ul class="sub-list" >
                             <li><a href="#">Accounts</a>
                                 <ul class="sub-list2">
@@ -68,8 +72,13 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="main-list"><a href="" >For Business</a>
-                        <ul class="sub-list">
+                    <li class="main-list" id="main-list">
+                        <div class="arrows">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            <i class="fa-solid fa-arrow-down"></i> 
+                        </div> 
+                        For Business
+                        <ul class="sub-list" id="sub-list">
                             <li><a href="#">Business Accounts</a>
                                 <ul class="sub-list2">
                                     <li><a href="#">Business Checking</a></li>
@@ -104,8 +113,13 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="main-list"><a href="" >Connect With Us</a>
-                        <ul class="sub-list">
+                    <li class="main-list" id="main-list">
+                        <div class="arrows">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            <i class="fa-solid fa-arrow-down"></i> 
+                        </div>  
+                        Connect With Us
+                        <ul class="sub-list" id="sub-list">
                             <li><a href="#">Connect With Us</a>
                                 <ul class="sub-list2">
                                     <li><a href="">Locations</a></li>
@@ -121,8 +135,13 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="main-list"><a href="" >Get Started</a>
-                        <ul class="sub-list">
+                    <li class="main-list" id="main-list">
+                        <div class="arrows">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            <i class="fa-solid fa-arrow-down"></i> 
+                        </div>  
+                        Get Started
+                        <ul class="sub-list" id="sub-list">
                             <li><a href="#">Get Started</a>
                                 <ul class="sub-list2">
                                     <li><a href="">Open Account</a></li>
@@ -138,6 +157,7 @@
                         </ul>
                     </li>
                 </ul>
+                <i class="fa-solid fa-close close-nav" id="close-nav"></i>
             </nav>
         </div>
         <div class="container">
@@ -242,15 +262,15 @@
         <div class="container sub-section-con-6">
             <div class="testimonials" id="testimonials">
                 <div class="testimonial">
-                    <img src="images/Nate.jpg" alt="Nates' Picture">
+                    <div><img src="images/Nate.jpg" alt="Nates' Picture"></div>
                     <p>"I spent years with a national bank thinking that was all banking was supposed to be. It wasn't until I switched to ACCESSbank that I realized what banking should really be. The level of customer service and quality is unmatched. They know who I am and it shows how much they really care." <span>Nate Eskra, Regal Print</span></p>
                 </div>
                 <div class="testimonial">
-                    <img src="images/Terri.jpg" alt="Nates' Picture">
+                    <div><img src="images/Terri.jpg" alt="Terris' Picture"></div>
                     <p>"I've been a satisfied customer of ACCESSbank's for several years. The employees are always personable, helpful and friendly, no matter which branch you're at. Their customer service is amazing and I have referred several friends to ACCESSbank." <span>Terri - ACCESSbank Customer</span></p>
                 </div>
                 <div class="testimonial">
-                    <img src="images/White_revised.jpg" alt="Nates' Picture">
+                    <div><img src="images/White_revised.jpg" alt="Whites' Picture"></div>
                     <p>"After years of being frustrated at other banks, I finally found my banking home at ACCESSbank! Whether I'm working with a commercial banker, branch manager or the front line employees, the customer service is always first rate. Everyone greets me with a smile, and goes above and beyond to help. If a great customer experience is important to you, I can't recommend ACCESSbank enough." <span>Dr. Rodney White, Sarpy Chiropractic</span></p>
                 </div>
             </div>
@@ -258,6 +278,54 @@
             <i class="fa-solid fa-chevron-right" id="next-testimonial"></i>
         </div>
     </section>
+    <section class="section-7">
+        <div class="section-7-inner-pad">
+            <div class="section-con-7">
+                <h2>We make things happen in omaha.</h2>
+                <p>At ACCESSbank we're here for a reason, to  make our community stronger. Here's a glance at how we're doing just that. Want to see more examples of how we serve the Greater Omaha Community? Head over to our <a href="#">Community ACCESS</a> page!</p>
+            </div>
+            <div class="navigation">
+                <div class="statistics" id="statistics">
+                    <div class="non-profits">
+                        <h2>353</h2>
+                        <div class="horizontal-bar"></div>
+                        <p>The number of different non-profits we have given back to. We take pride in supporting as many non-profits as possible.</p>
+                    </div>
+                    <div class="non-profits">
+                        <h2>$1.12 million</h2>
+                        <div class="horizontal-bar"></div>
+                        <p>How much we have invested in local organizations. We understand the importance of helping community non-profits grow and succeed.</p>
+                    </div>
+                    <div class="non-profits">
+                        <h2>135</h2>
+                        <div class="horizontal-bar"></div>
+                        <p>Combining our time, talent and resources, this is the number of current ACCESSbank employees dedicated to making things happen in our community in 2022.</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-left" id="prev-stat"></i>
+                <i class="fa-solid fa-chevron-right" id="next-stat"></i>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-sec-1 container">
+            <div class="links">
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">PATRIOT Act</a>
+                <a href="#">Labor Law Posters</a>
+            </div>
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-horizontal-bar"></div>
+        <div class="footer-sec-2 container">
+            
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

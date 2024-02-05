@@ -2,9 +2,30 @@
 
 // Mobile View
 
-// const nav = getElementById("nav");
+const mainNav = document.getElementById("main-nav");
+const openMenu = document.getElementById("hamburger");
+const closeMenu = document.getElementById("close-nav")
 
+openMenu.addEventListener("click", () => {
+    mainNav.classList.add("show_menu")
+})
+closeMenu.addEventListener("click", () => {
+    mainNav.classList.remove("show_menu")
+})
 
+const mainList = document.querySelectorAll(".main-list");
+const subList = document.querySelectorAll(".sub-list");
+
+for(i = 0; i < mainList.length; i++) {
+    mainList[i].addEventListener("click", () => {
+        mainList.classList.add("show-sub-list");
+    })
+}
+
+// navLink.forEach(n => n.addEventListener("click", () => {
+//     const navMenu = document.getElementById("nav_menu");
+//     navMenu.classList.remove("show_menu");
+// }))
 
 // Image Wrapper Nav
 
@@ -20,7 +41,6 @@
 const imageWrapper = document.getElementById("img-wrapper");
 const leftNav = document.getElementById("prev");
 const rightNav = document.getElementById("next");
-
 
 leftNav.addEventListener("click", () => {
     imageWrapper.scrollBy({ left: -imageWrapper.clientWidth, behavior: "smooth"});
@@ -50,3 +70,18 @@ prevTestimonial.addEventListener("click", () => {
 nextTestimonial.addEventListener("click", () => {
     testimonialWrapper.scrollBy({left: testimonialWrapper.clientWidth, behavior: "smooth"});
 });
+
+const statisticsWrapper = document.getElementById("statistics");
+const prevStat = document.getElementById("prev-stat");
+const nextStat = document.getElementById("next-stat");
+
+prevStat.addEventListener("click", () => {
+    statisticsWrapper.scrollBy({left: -statisticsWrapper.clientWidth, behavior: "smooth"});
+});
+nextStat.addEventListener("click", () => {
+    statisticsWrapper.scrollBy({left: statisticsWrapper.clientWidth, behavior: "smooth"});
+});
+
+
+
+
